@@ -1,0 +1,190 @@
+/* =========================
+   Estilos base VetClinica
+   Archivo: Estilos.css
+   ========================= */
+
+/* Fuente y colores principales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Encabezado */
+.navbar {
+  background-color: #1f3c88 !important; /* azul profesional */
+}
+
+.navbar-brand span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-link {
+  color: #ddd !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+}
+
+/* Botones de header */
+.btn-outline-light {
+  border-color: #fff;
+}
+
+.btn-warning {
+  font-weight: bold;
+}
+
+/* Carrusel */
+.carousel-caption h1, 
+.carousel-caption h2 {
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.carousel-caption p {
+  font-size: 1.1rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* =========================
+   Secciones principales
+   ========================= */
+
+/* Servicios */
+section.container h2 {
+  font-weight: bold;
+  color: #1f3c88;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.card-title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Equipo */
+.list-group-item {
+  background-color: transparent;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Formularios */
+form .form-label {
+  font-weight: 600;
+  color: #1f3c88;
+}
+
+form .form-control, 
+form .form-select, 
+form textarea {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form .form-control:focus, 
+form .form-select:focus, 
+form textarea:focus {
+  border-color: #1f3c88;
+  box-shadow: 0 0 5px rgba(31,60,136,0.4);
+}
+
+/* Botones de formularios */
+form button {
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+/* =========================
+   Footer
+   ========================= */
+footer {
+  background-color: #1f3c88;
+  color: #fff;
+}
+
+footer h5 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #ffd700; /* amarillo dorado */
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* =========================
+   Modales
+   ========================= */
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-body h6 {
+  font-weight: 600;
+  color: #1f3c88;
+  margin-top: 15px;
+}
+
+/* Inputs dentro de modales */
+.modal-body .form-control,
+.modal-body textarea {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.modal-body .form-control:focus,
+.modal-body textarea:focus {
+  border-color: #1f3c88;
+  box-shadow: 0 0 5px rgba(31,60,136,0.4);
+}
+
+/* =========================
+   Ajustes Responsive
+   ========================= */
+@media (max-width: 768px) {
+  .navbar-brand span {
+    font-size: 1rem;
+  }
+
+  .carousel-caption h1,
+  .carousel-caption h2 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
